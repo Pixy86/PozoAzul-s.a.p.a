@@ -14,6 +14,9 @@ chmod 775 database/database.sqlite
 # Run migrations
 php artisan migrate --force
 
+# Discover packages (since we bypassed scripts during composer install)
+php artisan package:discover --ansi
+
 # Cache config and routes for performance
 php artisan config:cache
 php artisan route:cache
