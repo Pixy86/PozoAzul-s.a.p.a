@@ -15,9 +15,7 @@ php artisan migrate --force
 # Discover packages (since we bypassed scripts during composer install)
 php artisan package:discover --ansi
 
-# Cache config and routes for performance
-php artisan config:cache
-php artisan route:cache
+# (Skipping config and route caching to prevent issues with env variables and permissions in Render)
 
 # Start Apache
 exec apache2-foreground
