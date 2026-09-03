@@ -1,0 +1,29 @@
+# Node dependencies & build artifacts
+node_modules/
+dist/
+build/
+.output/
+
+# Laravel / PHP
+backend/vendor/
+backend/storage/*.key
+backend/storage/framework/cache/*
+backend/storage/framework/sessions/*
+backend/storage/framework/testing/*
+backend/storage/framework/views/*
+backend/storage/logs/*
+backend/.phpunit.result.cache
+
+# Environment & local settings
+.env
+.env.local
+.env.*.local
+backend/.env
+frontend/.env.local
+
+# IDE & System files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
