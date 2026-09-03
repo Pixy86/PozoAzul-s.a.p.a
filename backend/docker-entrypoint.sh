@@ -1,10 +1,8 @@
 #!/bin/bash
 set -e
 
-# Generate app key if not set
-if [ -z "$APP_KEY" ]; then
-    php artisan key:generate --force
-fi
+# .env is handled by Render environment variables, but touch it just in case any package expects it to exist
+touch .env
 
 # Create SQLite database if it doesn't exist
 touch database/database.sqlite
